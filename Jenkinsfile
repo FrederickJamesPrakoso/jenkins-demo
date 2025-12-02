@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/octocat/Hello-World.git'
+                checkout scm
                 echo "Source code checked out"
             }
         }
